@@ -1,0 +1,239 @@
+body {
+  font-family:Monospace;
+  font-weight:700;
+}
+
+.navbar-centering {    
+  width: 95%;
+  margin:auto;
+}
+
+.sections {
+  width: 100%;
+//  height:500px;
+  background-attachment:fixed;
+  background-position:center;
+  padding:20px;  
+  background-size: 100% auto;  
+}
+#section1 {
+  //background-image: url(http://www.technocrazed.com/wp-content/uploads/2015/12/city-wallpaper-22.jpg);  
+ background-image: url(https://41.media.tumblr.com/56b20d8b7e90f504d33b3b625b1b1880/tumblr_o3z57z8Xqf1slhhf0o1_1280.jpg);
+  
+}
+
+#section2 {
+  background-image: url(http://codingbasics.net/wp-content/uploads/2014/04/computer-programming.jpeg);
+  background-color: black;
+  z-index:10;
+  position:relative;
+  color:white;
+}
+
+div.content {
+  position:relative;
+  top:80px;
+  width: 80%;
+  margin:auto auto 200px auto;
+  padding:20px;
+  z-index:10;
+}
+
+.transparent-box {
+  opacity:0.6;
+  z-index:-1;
+  background-color:white;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  position:absolute;
+  border-radius:10px;  
+  //margin-bottom:100px;
+}
+
+nav a:hover {
+  border-bottom:1px solid white;
+}
+
+hr {
+  opacity:0.6;
+  border-color:#515151;
+}
+
+.link-list {
+  display:inline-block;
+  margin:20px auto 0px auto;
+  color:#9d9d9d;
+  list-style:none;
+  padding:0;
+}
+.link-list li {
+  background:#222;
+  border:1px solid grey;
+  padding:10px;
+  display:inline-block;
+  border-radius:5px;
+  margin:0 6px;
+}
+.link-list a {
+  color:#9d9d9d;
+  text-decoration:none;
+  display:inline-block;
+}
+.link-list a:hover,
+.link-list li:hover {
+  color:white;
+  background:#333;
+  transition:0.3s;
+}
+
+.transparent-box2 {
+  z-index:-1;
+  top:0px;
+  right:0px;
+  left:0px;
+  bottom:0px;
+  background-color:#000;
+  position:absolute;
+  opacity:0.8;
+}
+
+.about-me {
+  margin-left:10%;
+  width:60%;
+}
+
+.profile-picture {
+  border-radius:50%;
+  border:3px solid white;
+  width:150px;
+  height:150px;
+}
+
+.footer {
+  clear:both;
+  height: 120px;
+  width:100%;
+  background-color: #222;  
+}
+.footer div {
+  padding-top:15px;
+  color: #9d9d9d;
+}
+.footer div ul {
+  display:inline-block;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.footer div ul li {
+  display:inline-block;
+  color:white;
+  margin:0 8px;
+}
+}
+
+.separator:before {
+  content: "| ";
+}
+
+#contact > div {
+  width: 55%;  
+  margin-left:15%; 
+  padding-top:3em;  
+}
+
+.contact-left {  
+  clear:left;  
+}
+
+.contact-right {
+  clear:both;
+  float:right; 
+}
+
+.contact-link-list {  
+  color:#9d9d9d;
+  list-style-type:none;
+  padding-bottom:30px;
+  padding-left:0;
+}
+.contact-link-list li {
+  background:#222;
+  margin-bottom:10px;
+  border:1px solid grey;
+  padding:10px;
+  border-radius:5px;
+}
+.contact-link-list a {
+  text-decoration:none;
+  color:inherit;
+}
+.contact-link-list a:hover,
+.contact-link-list li:hover {
+  color:white;
+  background:#333;
+  transition:0.3s;
+}
+
+
+#portifolio {
+  background-image: url(https://40.media.tumblr.com/f9c8f3430c9e3922cca1b9c5e4d10ef8/tumblr_o39gqau72M1slhhf0o1_1280.jpg);  
+}
+
+#portifolio * {
+  z-index:2;
+}
+.portifolio-caption {
+  //margin:0px 10px 10px 10px;
+  text-align:center;
+  color:white;
+  background-color:#818181;
+}
+
+.portifolio-hover {
+  background: rgba(0,0,0,.7);
+  position:absolute;
+  width:100%;
+  height:100%;
+  opacity:0;
+  transition:all ease .5s;
+  -webkit-transition:all ease .5s;
+  -moz-transition:all ease .5s;
+}
+
+.portifolio-hover:hover {
+  opacity:0.7;  
+}
+
+.portifolio-link {
+  max-width:400px;
+  display:block;
+  position:relative;
+  margin:0 auto;
+}
+
+.portifolio-hover-content {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  top:50%;
+  margin-top:-12px;
+  color:white;
+}
+
+.row {
+  margin-top:15px;
+}
+
+/* small pulse effect for portfolio placeholders */
+.pulse {
+  animation: pulse 0.35s ease-in-out;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.98); }
+  100% { transform: scale(1); }
+}
