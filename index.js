@@ -41,3 +41,33 @@
       alterStyles(isBackToTopRendered);
     }
   });
+
+// ----- Mobile hamburger menu -----
+const navToggle = document.querySelector('.nav__toggle');
+const nav = document.querySelector('.nav');
+const navLinks = document.querySelectorAll('.nav__link');
+
+if (navToggle && nav) {
+  navToggle.addEventListener('click', () => {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', String(!expanded));
+    nav.classList.toggle('nav--open');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (nav.classList.contains('nav--open')) {
+        nav.classList.remove('nav--open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav.classList.contains('nav--open')) {
+      nav.classList.remove('nav--open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.focus();
+    }
+  });
+}
