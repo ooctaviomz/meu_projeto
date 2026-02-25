@@ -509,6 +509,14 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+/* Make project images responsive and limit maximum width */
+.work__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+}
+
 @media(max-width: 900px) {
     .work__code {
         height: 4rem;
@@ -652,7 +660,7 @@ body:not(.user-is-tabbing) a:focus {
     .work__image {
         width: 100%;
         height: auto;
-        display: block;
+        max-width: 360px;
     }
 
     .tec__logos {
