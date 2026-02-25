@@ -110,6 +110,7 @@ header h1 {
   letter-spacing: 1.5px;
   background: linear-gradient(135deg, #000000, #000000);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -191,8 +192,10 @@ footer {
 footer p {
   margin: 0;
 }
-
-/* Responsividade para telas menores */
+p {
+  margin-bottom: 30px;
+  color: black;
+}/* Responsividade para telas menores */
 @media screen and (max-width: 768px) {
   .sidebar {
       width: 100%;
@@ -246,4 +249,5 @@ a, button {
   100% {
     background-position: 0% 50%;
   }
+
 }
