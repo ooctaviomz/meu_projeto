@@ -88,7 +88,6 @@ function adicionarHistorico(conta, resultado) {
     item.textContent = `${conta} = ${resultado}`;
     historyEl.prepend(item);
 }
-
 /* =========================
    SUPORTE AO TECLADO
 ========================= */
