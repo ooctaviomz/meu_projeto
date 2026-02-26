@@ -8,5 +8,5 @@ My project
 > Site do Octávio Muniz (entrada em 2022). Atualmente cursando Graduação em redes de computadores.
 >
 > 
-<h4 align="center" target="_blank"> 🡕 <a href="https://ooctaviomz.github.io/meu_projeto/index-principal/Indexoc.html" target="_blank"> Acesse a index </a> </h4>
+<h4 align="center" target="_blank"> 🡕 <a href="https://ooctaviomz.github.io/meu_projeto/index_principal/Indexoc.html" target="_blank"> Acesse a index </a> </h4>
 </capivara>
