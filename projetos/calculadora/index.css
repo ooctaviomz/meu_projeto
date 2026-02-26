@@ -42,4 +42,48 @@
             text-align: right;
             padding: 5px;
         }
-   
+   .display {
+    background: white;
+    color: rgb(255, 255, 255);
+    width: 207px;
+    margin: 5px;
+    padding: 10.6px;
+    border-radius: 5px;
+}
+
+#operacao {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    min-height: 18px;
+}
+
+#resultado {
+    font-size: 26px;
+    text-align: right;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.historico {
+    margin-top: 0.5px;
+    background: rgba(255,255,255,0.1);
+    padding: 70px;
+    border-radius: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+.calculadora {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;          /* ⭐ faz virar horizontal */
+    gap: 20px;              /* espaço entre calc e histórico */
+
+    background-color: rgba(0,0,0,0.85);
+    border-radius: 15px;
+    padding: 20px;}
+    
