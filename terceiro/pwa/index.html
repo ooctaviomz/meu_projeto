@@ -1,28 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PWA Tutorial</title>
-    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
-    <meta name="theme-color" content="black">
-    <link rel="manifest" href="manifest.json">
-    <link rel="icon" href="images/icon-192x192.png">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'> 
+    <link
+            type="image/png"
+            sizes="32x32"
+            rel="icon"
+            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpWFmhiUzqucL-Jk5KZcjMTTplvFnPnwgw8A&usqp=CAU">
 </head>
-
 <body>
-
-    <h1> Mohg the lord of blood</h1>
-
-    <div id="container">
-        <div id="area-texto"></div>
-        <input type="text" id="input-comando" placeholder="Digite seu comando">
-        <span id="cursor">_</span>
+    
+    <div class="fundo">
+        <h1>Básic project of a calculator</h1>
+        <div class="calculadora">
+            <h1>Calculator</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="clean()">C</button></td>
+                    <td><button class="botao" onclick="back()">⌫</button></td>
+                    <td><button class="botao" onclick="insert('/')">/</button></td>
+                    <td><button class="botao" onclick="insert('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
+                    <td><button class="botao" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+                    <td><button class="botao" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('1')">1</button></td>
+                    <td><button class="botao" onclick="insert('2')">2</button></td>
+                    <td><button class="botao" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <script src="script.js"></script>
+   <script src="index.js"></script>
 </body>
-
 </html>
