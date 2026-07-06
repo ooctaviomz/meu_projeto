@@ -1,3 +1,4 @@
+"code cmd install psutil: pip install psutil"
 import tkinter as tk
 import threading
 import time
@@ -32,4 +33,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
